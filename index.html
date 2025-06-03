@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Basta</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    header button {
+      background-color: #444;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    header button:hover {
+      background-color: #666;
+    }
+
+    .titulo {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 46px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .contenido {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      font-size: 18px;
+      line-height: 1.6;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .mensaje-minecraft {
+      display: none;
+      background-color: #fffbcc;
+      border: 1px solid #999;
+      padding: 15px;
+      margin: 20px auto;
+      max-width: 600px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .frisk-img {
+      position: absolute;
+      top: 80px;
+      right: 50%;
+      transform: translateX(50%);
+      height: 150px;
+      z-index: 10;
+    }
+    .gif-alma {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      height: 60px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <button onclick="mostrarMinecraft()">Minecraft</button>
+    <button onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'">Regalos</button>
+    <button onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfBf5-fssDwpXwUmeB8p0cBDoWLcw_uOmXEDxtLmconwSCK0Q/viewform?usp=dialog'">Encuesta</button>
+    <button>Gracias por ver</button>
+  </header>
+
+  <div class="titulo">Basta</div>
+
+  <div id="minecraftMsg" class="mensaje-minecraft">
+    Estamos buscando gente para nuestro server de Minecraft.<br>
+    Escribe al 317 5081952.<br>
+    Esto es serio.
+  </div>
+
+  <div class="contenido">
+    <p><strong>Bullying no es solo golpes.</strong><br>
+    Es burlas. Aislamiento. Miradas que juzgan. Risas que duelen.<br>
+    Y lo peor… el silencio de quienes ven y no hacen nada.</p>
+
+    <p>🗣️ <strong>¿Y tú, qué harías?</strong><br>
+    ¿Te reirías?<br>
+    ¿Pasarías de largo?<br>
+    ¿O darías un paso para defender a alguien que no puede más?</p>
+
+    <p>✋ <strong>No seas parte del daño. Sé parte del cambio.</strong></p>
+
+    <p>📌 <strong>Si eres víctima:</strong> No estás solo. Hay personas que quieren ayudarte.<br>
+    📌 <strong>Si eres testigo:</strong> Tu voz puede ser un escudo y evitar malas decisiones.<br>
+    📌 <strong>Si alguna vez hiciste bullying:</strong> Siempre puedes cambiar, mejora tus comportamientos.</p>
+
+    <p>📞 <strong>Recursos de apoyo:</strong><br>
+    💬 Línea gratuita de ayuda emocional: [Número o contacto local]</p>
+
+    <p>🧠 Habla con tu orientador o un adulto de confianza.</p>
+
+    <p>🌐 Visita [Nombre de la página o red social del proyecto] para más historias, ayuda y consejos.</p>
+
+    <p>🙍🏻‍♂️ <strong>Escucharte también es una forma de ayudar.</strong><br>
+    Comparte tu historia. Rompe el silencio.</p>
+
+    <p><strong>Porque cada vez que ignoramos el bullying, le damos poder.<br>
+    Pero cada vez que hablamos, lo debilitamos.</strong></p>
+  </div>
+
+  <script>
+    function mostrarMinecraft() {
+      const msg = document.getElementById('minecraftMsg');
+      msg.style.display = msg.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+
+  <img src="https://static.wikia.nocookie.net/undertale/images/a/a7/Undertale_frisk_front_by_ldinos-d9ywr9e.png/revision/latest?cb=20170105221708&path-prefix=es" class="frisk-img" alt="Frisk">
+  <img src="alma.gif" class="gif-alma" alt="Alma Undertale">
+</body>
+</html>
